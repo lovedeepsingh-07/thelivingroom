@@ -22,10 +22,11 @@
         devShells = import ./.nix/shell.nix {
           inherit pkgs;
         };
-        # packages = import ./.nix/packages {
-        #   inherit pkgs;
-        #   gitignore = inputs.gitignore;
-        # };
+        packages.default = pkgs.callPackage ./.nix/package.nix {
+		  src = ./.;
+          gitignore = inputs.gitignore;
+		  yarn_berry = pkgs.yarn-berry_4;
+        };
       }
     );
 }

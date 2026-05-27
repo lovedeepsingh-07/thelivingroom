@@ -1,0 +1,31 @@
+name: Release
+on:
+  push:
+    tags: ["v*"]
+env:
+  FORCE_JAVASCRIPT_ACTIONS_TO_NODE24: true
+jobs:
+  release:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v6
+      # Setup Nix
+      - name: Install Nix
+        uses: DeterminateSystems/nix-installer-action@main
+      - name: Setup Nix Cache
+        uses: DeterminateSystems/magic-nix-cache-action@main
+      # Build Frontend
+      - name: Build Frontend
+        run: nix build .#frontend
+      # Cloudlfare pages deployment
+      - run: |
+          mkdir -p build
+          cp -r result/dist/* result/dist/.* build/
+      - name: Deploy to Cloudlfare Pages
+        uses: cloudflare/wrangler-action@v3
+        with:
+          wranglerVersion: "4.57.0"
+          apiToken: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+          accountId: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
+          command: pages deploy --branch=main --commit-dirty=true
