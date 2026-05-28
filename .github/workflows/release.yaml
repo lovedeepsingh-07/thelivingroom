@@ -4,21 +4,20 @@ on:
     tags: ["v*"]
 env:
   FORCE_JAVASCRIPT_ACTIONS_TO_NODE24: true
+  CLOUDFLARE_PROJECT_NAME: ${{secrets.CLOUDFLARE_PROJECT_NAME}}
+  CLOUDFLARE_COMPATIBILITY_DATE: 2026-01-03
 jobs:
   release:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
         uses: actions/checkout@v6
-      # Setup Nix
       - name: Install Nix
         uses: DeterminateSystems/nix-installer-action@main
       - name: Setup Nix Cache
         uses: DeterminateSystems/magic-nix-cache-action@main
-      # Build Frontend
       - name: Build Frontend
-        run: nix build .#frontend
-      # Cloudlfare pages deployment
+        run: nix build
       - run: |
           mkdir -p build
           cp -r result/dist/* result/dist/.* build/
@@ -28,4 +27,4 @@ jobs:
           wranglerVersion: "4.57.0"
           apiToken: ${{ secrets.CLOUDFLARE_API_TOKEN }}
           accountId: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
-          command: pages deploy --branch=main --commit-dirty=true
+          command: pages deploy build/.svelte-kit/cloudflare --project-name="${{env.CLOUDFLARE_PROJECT_NAME}}" --branch=main --commit-dirty=true

@@ -17,7 +17,7 @@
 				<div class="rounded-lg bg-gray-500 px-2">{curr_tag}</div>
 			{/each}
 		</div>
-		<div class="prose mt-[40px] mb-[80px] prose-invert">
+		<div class="prose mt-[40px] mb-[80px] dark:prose-invert">
 			{@html curr_post.content}
 		</div>
 	</div>

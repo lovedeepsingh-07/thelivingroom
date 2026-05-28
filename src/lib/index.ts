@@ -17,8 +17,14 @@ import rehypeSlug from "rehype-slug";
 import rehypeAutolinkHeadings from "rehype-autolink-headings";
 import rehypeKatex from "rehype-katex";
 import rehypeStringify from "rehype-stringify";
-import rehypeShiki from "@shikijs/rehype";
-import rehypeMermaid from "rehype-mermaid";
+import rehypeShikiFromHighlighter from "@shikijs/rehype/core";
+import { createHighlighterCore } from "shiki/core";
+import { createJavaScriptRegexEngine } from "shiki/engine/javascript";
+
+const highlighter = await createHighlighterCore({
+	themes: [import("@shikijs/themes/tokyo-night")],
+	engine: createJavaScriptRegexEngine()
+});
 
 export const render_content = async (content: string): Promise<string> => {
 	const file = await unified()
@@ -66,13 +72,13 @@ export const render_content = async (content: string): Promise<string> => {
 		.use(rehypeKatex)
 
 		// syntax highlighting
-		.use(rehypeShiki, {
-			theme: "tokyo-night"
+		.use(rehypeShikiFromHighlighter, highlighter, {
+			// or `theme` for a single theme
+			themes: {
+				light: "vitesse-light",
+				dark: "vitesse-dark"
+			}
 		})
-
-		// mermaid diagrams
-		.use(rehypeMermaid)
-
 		.use(rehypeStringify)
 
 		.process(content);
