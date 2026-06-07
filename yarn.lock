@@ -2438,13 +2438,6 @@ __metadata:
   languageName: node
   linkType: hard
 
-"hast-util-to-string@npm:^1.0.4":
-  version: 1.0.4
-  resolution: "hast-util-to-string@npm:1.0.4"
-  checksum: 10c0/02f4631ae5e597ade64653a35205ebd2c378fe373f7c9d9d00cf37f753e0d89d74949d8e1df6e5f7bfae6b2c350d8069faede9a014018a03ce4a168e3864cb15
-  languageName: node
-  linkType: hard
-
 "hast-util-to-string@npm:^3.0.0, hast-util-to-string@npm:^3.0.1":
   version: 3.0.1
   resolution: "hast-util-to-string@npm:3.0.1"
@@ -2634,15 +2627,6 @@ __metadata:
   version: 1.0.1
   resolution: "json-stable-stringify-without-jsonify@npm:1.0.1"
   checksum: 10c0/cb168b61fd4de83e58d09aaa6425ef71001bae30d260e2c57e7d09a5fd82223e2f22a042dedaab8db23b7d9ae46854b08bb1f91675a8be11c5cffebef5fb66a5
-  languageName: node
-  linkType: hard
-
-"json5@npm:^2.1.0":
-  version: 2.2.3
-  resolution: "json5@npm:2.2.3"
-  bin:
-    json5: lib/cli.js
-  checksum: 10c0/5a04eed94810fa55c5ea138b2f7a5c12b97c3750bc63d11e511dcecbfef758003861522a070c2272764ee0f4e3e323862f386945aeb5b85b87ee43f084ba586c
   languageName: node
   linkType: hard
 
@@ -2848,15 +2832,6 @@ __metadata:
   version: 3.1.0
   resolution: "longest-streak@npm:3.1.0"
   checksum: 10c0/7c2f02d0454b52834d1bcedef79c557bd295ee71fdabb02d041ff3aa9da48a90b5df7c0409156dedbc4df9b65da18742652aaea4759d6ece01f08971af6a7eaa
-  languageName: node
-  linkType: hard
-
-"lru-cache@npm:^5.1.1":
-  version: 5.1.1
-  resolution: "lru-cache@npm:5.1.1"
-  dependencies:
-    yallist: "npm:^3.0.2"
-  checksum: 10c0/89b2ef2ef45f543011e38737b8a8622a2f8998cddf0e5437174ef8f1f70a8b9d14a918ab3e232cb3ba343b7abddffa667f0b59075b2b80e6b4d63c3de6127482
   languageName: node
   linkType: hard
 
@@ -3634,15 +3609,6 @@ __metadata:
   languageName: node
   linkType: hard
 
-"onigasm@npm:^2.2.1":
-  version: 2.2.5
-  resolution: "onigasm@npm:2.2.5"
-  dependencies:
-    lru-cache: "npm:^5.1.1"
-  checksum: 10c0/79eeefa07f196239a9007f504983066212aea2c8b080aeae1f1df92d215d5165f3c9bfdbc35b12c5581ac1eec54f1b98720b6f0c39f7a4433e2e16aca2a8c97c
-  languageName: node
-  linkType: hard
-
 "oniguruma-parser@npm:^0.12.2":
   version: 0.12.2
   resolution: "oniguruma-parser@npm:0.12.2"
@@ -4091,19 +4057,6 @@ __metadata:
   languageName: node
   linkType: hard
 
-"rehype-shiki@npm:^0.0.9":
-  version: 0.0.9
-  resolution: "rehype-shiki@npm:0.0.9"
-  dependencies:
-    hast-util-to-string: "npm:^1.0.4"
-    shiki: "npm:^0.1.7"
-    shiki-languages: "npm:^0.1.6"
-    unist-builder: "npm:^2.0.3"
-    unist-util-visit: "npm:^2.0.3"
-  checksum: 10c0/7962165d82b27e96072ce210fa7c0d8b7b985d15dbf2d70abcce4da404f49eebbe57b5c99004e15d9b7b046a0c01ccde965a99e4b6b74db63a203cd6034d6ac8
-  languageName: node
-  linkType: hard
-
 "rehype-slug@npm:^6.0.0":
   version: 6.0.0
   resolution: "rehype-slug@npm:6.0.0"
@@ -4498,25 +4451,6 @@ __metadata:
   languageName: node
   linkType: hard
 
-"shiki-languages@npm:^0.1.6":
-  version: 0.1.6
-  resolution: "shiki-languages@npm:0.1.6"
-  dependencies:
-    vscode-textmate: "git+https://github.com/octref/vscode-textmate.git"
-  checksum: 10c0/42b360b600693285e49bbe02f2239c9a33ad9af7d908602298cdcf7420d5b57d4a9e7155cdd7c2bcbeaec234fe9d040c6dce9cc3e93a21248a94829f0a7ecab1
-  languageName: node
-  linkType: hard
-
-"shiki-themes@npm:^0.1.7":
-  version: 0.1.7
-  resolution: "shiki-themes@npm:0.1.7"
-  dependencies:
-    json5: "npm:^2.1.0"
-    vscode-textmate: "https://github.com/octref/vscode-textmate"
-  checksum: 10c0/3da92030cf6d0dbb79fd1ff728e4415477f34371f1bc17d5e09c5eca4a1e6e1c5fe2d9b3b61b837a1b58adfcf12e79ecd34b0717cdf6e58bff28b837e4fb1f7c
-  languageName: node
-  linkType: hard
-
 "shiki@npm:4.1.0, shiki@npm:^4.1.0":
   version: 4.1.0
   resolution: "shiki@npm:4.1.0"
@@ -4530,18 +4464,6 @@ __metadata:
     "@shikijs/vscode-textmate": "npm:^10.0.2"
     "@types/hast": "npm:^3.0.4"
   checksum: 10c0/d5418dd8fa8d5eb46ebc36f8fced8513835702915b5cd1e2ccf46790cd002dcf84a385d184b96dd1f19ce4626d4fac139f624dbaa12deddb0aac0b973939edfa
-  languageName: node
-  linkType: hard
-
-"shiki@npm:^0.1.7":
-  version: 0.1.7
-  resolution: "shiki@npm:0.1.7"
-  dependencies:
-    onigasm: "npm:^2.2.1"
-    shiki-languages: "npm:^0.1.6"
-    shiki-themes: "npm:^0.1.7"
-    vscode-textmate: "https://github.com/octref/vscode-textmate"
-  checksum: 10c0/5af74693155eefebafeccb930fbb90b60b022b9b683955ec79220cb04f0ef49f020462839b9a726ea79162b2b88e91bd8aeb36031ffbd90faa1132bc8a64d25b
   languageName: node
   linkType: hard
 
@@ -4705,9 +4627,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"the-living-room@workspace:.":
+"thelivingroom@workspace:.":
   version: 0.0.0-use.local
-  resolution: "the-living-room@workspace:."
+  resolution: "thelivingroom@workspace:."
   dependencies:
     "@eslint/compat": "npm:^2.0.4"
     "@eslint/js": "npm:^10.0.1"
@@ -4737,7 +4659,6 @@ __metadata:
     rehype-katex: "npm:^7.0.1"
     rehype-raw: "npm:^7.0.0"
     rehype-sanitize: "npm:^6.0.0"
-    rehype-shiki: "npm:^0.0.9"
     rehype-slug: "npm:^6.0.0"
     rehype-stringify: "npm:^10.0.1"
     remark-breaks: "npm:^4.0.0"
@@ -4913,13 +4834,6 @@ __metadata:
   languageName: node
   linkType: hard
 
-"unist-builder@npm:^2.0.3":
-  version: 2.0.3
-  resolution: "unist-builder@npm:2.0.3"
-  checksum: 10c0/d8b13ffd774bfe6175ca988d63cbaf6d85882a0701d6158597134ce1c3acf665a09421461a4036704f77edb8a6a2792d09eb55382428c2a9a60488b44909eeae
-  languageName: node
-  linkType: hard
-
 "unist-util-find-after@npm:^5.0.0":
   version: 5.0.0
   resolution: "unist-util-find-after@npm:5.0.0"
@@ -4927,13 +4841,6 @@ __metadata:
     "@types/unist": "npm:^3.0.0"
     unist-util-is: "npm:^6.0.0"
   checksum: 10c0/a7cea473c4384df8de867c456b797ff1221b20f822e1af673ff5812ed505358b36f47f3b084ac14c3622cb879ed833b71b288e8aa71025352a2aab4c2925a6eb
-  languageName: node
-  linkType: hard
-
-"unist-util-is@npm:^4.0.0":
-  version: 4.1.0
-  resolution: "unist-util-is@npm:4.1.0"
-  checksum: 10c0/21ca3d7bacc88853b880b19cb1b133a056c501617d7f9b8cce969cd8b430ed7e1bc416a3a11b02540d5de6fb86807e169d00596108a459d034cf5faec97c055e
   languageName: node
   linkType: hard
 
@@ -4974,16 +4881,6 @@ __metadata:
   languageName: node
   linkType: hard
 
-"unist-util-visit-parents@npm:^3.0.0":
-  version: 3.1.1
-  resolution: "unist-util-visit-parents@npm:3.1.1"
-  dependencies:
-    "@types/unist": "npm:^2.0.0"
-    unist-util-is: "npm:^4.0.0"
-  checksum: 10c0/231c80c5ba8e79263956fcaa25ed2a11ad7fe77ac5ba0d322e9d51bbc4238501e3bb52f405e518bcdc5471e27b33eff520db0aa4a3b1feb9fb6e2de6ae385d49
-  languageName: node
-  linkType: hard
-
 "unist-util-visit-parents@npm:^6.0.0":
   version: 6.0.2
   resolution: "unist-util-visit-parents@npm:6.0.2"
@@ -5002,17 +4899,6 @@ __metadata:
     unist-util-is: "npm:^6.0.0"
     unist-util-visit-parents: "npm:^6.0.0"
   checksum: 10c0/51434a1d80252c1540cce6271a90fd1a106dbe624997c09ed8879279667fb0b2d3a685e02e92bf66598dcbe6cdffa7a5f5fb363af8fdf90dda6c855449ae39a5
-  languageName: node
-  linkType: hard
-
-"unist-util-visit@npm:^2.0.3":
-  version: 2.0.3
-  resolution: "unist-util-visit@npm:2.0.3"
-  dependencies:
-    "@types/unist": "npm:^2.0.0"
-    unist-util-is: "npm:^4.0.0"
-    unist-util-visit-parents: "npm:^3.0.0"
-  checksum: 10c0/7b11303d82271ca53a2ced2d56c87a689dd518596c99ff4a11cdff750f5cc5c0e4b64b146bd2363557cb29443c98713bfd1e8dc6d1c3f9d474b9eb1f23a60888
   languageName: node
   linkType: hard
 
@@ -5192,16 +5078,6 @@ __metadata:
   languageName: node
   linkType: hard
 
-"vscode-textmate@git+https://github.com/octref/vscode-textmate.git, vscode-textmate@https://github.com/octref/vscode-textmate":
-  version: 4.0.1
-  resolution: "vscode-textmate@https://github.com/octref/vscode-textmate.git#commit=e65aabe2227febda7beaad31dd0fca1228c5ddf3"
-  peerDependencies:
-    onigasm: ^2.1.0
-    oniguruma: ^7.0.0
-  checksum: 10c0/94774cb83e032a7bcc9789513e29eea0145cae54010a8a4d6b7a0037eec1979982be663c29b6b6b14093c82376064996a858cdf8be8e1ce6efd77211afd1b004
-  languageName: node
-  linkType: hard
-
 "vscode-uri@npm:^3.1.0":
   version: 3.1.0
   resolution: "vscode-uri@npm:3.1.0"
@@ -5322,13 +5198,6 @@ __metadata:
     utf-8-validate:
       optional: true
   checksum: 10c0/ce162433218399cdedeb76fd33363d4d86a7d910058d4e3c679dce08cea65d6da6b39f11baa4d7808d024cf46ed88f6a05c17611621aaad8fc5e62edacc30c5d
-  languageName: node
-  linkType: hard
-
-"yallist@npm:^3.0.2":
-  version: 3.1.1
-  resolution: "yallist@npm:3.1.1"
-  checksum: 10c0/c66a5c46bc89af1625476f7f0f2ec3653c1a1791d2f9407cfb4c2ba812a1e1c9941416d71ba9719876530e3340a99925f697142989371b72d93b9ee628afd8c1
   languageName: node
   linkType: hard
 

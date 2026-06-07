@@ -22,7 +22,7 @@ in
     offlineCache = yarn_berry.fetchYarnBerryDeps {
       src = filtered_src;
       missingHashes = missing_hashes;
-      hash = "sha256-THlQeaJvquABwZutZswa5z7tkS5rg9JoTeqGEM+kEkY=";
+      hash = "sha256-ntJVWTuXMWZiT/Hna7kq2MW+jWMa7lnzYhWwf2vR8oM=";
     };
 	# environment variable to let the build tools know the build is happening inside nix
 	NIX_BUILD = true;

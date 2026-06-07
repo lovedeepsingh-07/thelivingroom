@@ -1,5 +1,5 @@
 {
-  description = "the-living-room";
+  description = "thelivingroom";
   inputs = {
     nixpkgs.url = "github:nixos/nixpkgs/3146c6aa9995e7351a398e17470e15305e6e18ff";
     gitignore = {
